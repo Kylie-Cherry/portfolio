@@ -366,84 +366,105 @@ h2 em {
   filter: saturate(0.82);
 }
 
+/* =========================================================
+   HAND-DRAWN SQUIGGLE ACCENTS
+   ========================================================= */
 
-/* Image label */
+/* Hero */
 
-.image-note {
+.hero-squiggle {
   position: absolute;
 
-  bottom: -18px;
-  left: -18px;
+  width: 180px;
+  height: auto;
 
-  background: var(--purple);
+  right: 43%;
+  bottom: 8%;
 
-  color: var(--bg);
+  overflow: visible;
 
-  padding: 10px 15px;
+  pointer-events: none;
 
-  font-size: 0.62rem;
+  transform: rotate(-5deg);
+}
 
-  letter-spacing: 0.14em;
+.hero-squiggle path {
+  fill: none;
+
+  stroke: var(--purple);
+
+  stroke-width: 2;
+
+  stroke-linecap: round;
+
+  stroke-linejoin: round;
 }
 
 
 /* =========================================================
-   7. SQUIGGLY ACCENTS
+   SMALL DECORATIVE SQUIGGLE
    ========================================================= */
 
-.squiggle {
-  display: block;
+.squiggle.small {
+  position: absolute;
 
-  width: 115px;
+  width: 90px;
+  height: 35px;
 
+  right: 30px;
+  bottom: 28px;
+
+  overflow: visible;
+}
+
+.squiggle.small::before {
+  content: "";
+
+  position: absolute;
+
+  width: 90px;
   height: 25px;
+
+  border-bottom: 2px solid var(--purple);
+
+  border-radius: 45% 55% 50% 45%;
+
+  transform:
+    rotate(-5deg)
+    skewX(-10deg);
+}
+
+
+/* =========================================================
+   CONTACT SQUIGGLE
+   ========================================================= */
+
+.contact-squiggle {
+  position: absolute;
+
+  right: 15%;
+  top: 30%;
+
+  width: 180px;
+  height: 40px;
+
+  overflow: visible;
+
+  transform: rotate(7deg);
+}
+
+.contact-squiggle::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 5px 0;
 
   border-bottom: 2px solid var(--purple);
 
   border-radius: 50%;
 
   transform: rotate(-3deg);
-}
-
-
-/* Hero squiggle */
-
-.squiggle-hero {
-  position: absolute;
-
-  width: 170px;
-
-  right: 48%;
-
-  bottom: 9%;
-}
-
-
-/* Small squiggle */
-
-.squiggle.small {
-  width: 80px;
-
-  position: absolute;
-
-  right: 30px;
-
-  bottom: 28px;
-}
-
-
-/* Contact squiggle */
-
-.contact-squiggle {
-  position: absolute;
-
-  right: 15%;
-
-  top: 30%;
-
-  width: 170px;
-
-  transform: rotate(8deg);
 }
 
 
