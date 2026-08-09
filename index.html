@@ -1,1 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Architecture portfolio — YOUR NAME"
+  >
+
+  <title>Kylie Cherry — Architecture Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =====================================================
+       NAVIGATION
+       ===================================================== -->
+
+  <header class="nav">
+
+    <a class="logo" href="index.html">
+      Kylie Cherry<span>.</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+
+      <a href="#about">
+        About
+      </a>
+
+      <!-- WORK DROPDOWN -->
+      <div class="work-menu">
+
+        <button
+          class="work-toggle"
+          aria-expanded="false"
+          type="button"
+        >
+          Work <span>⌄</span>
+        </button>
+
+        <div
+          class="dropdown"
+          id="projectDropdown"
+        ></div>
+
+      </div>
+
+      <a href="#contact">
+        Contact
+      </a>
+
+    </nav>
+
+    <!-- Mobile menu button -->
+    <button
+      class="mobile-toggle"
+      aria-label="Open navigation"
+      aria-expanded="false"
+      type="button"
+    >
+      ☰
+    </button>
+
+  </header>
+
+
+  <!-- =====================================================
+       MOBILE NAVIGATION
+       ===================================================== -->
+
+  <div
+    class="mobile-menu"
+    id="mobileMenu"
+  >
+
+    <a href="#about">
+      About
+    </a>
+
+    <a href="#projects">
+      Work
+    </a>
+
+    <a href="#contact">
+      Contact
+    </a>
+
+    <!-- Projects are inserted here by script.js -->
+    <div id="mobileProjects"></div>
+
+  </div>
+
+
+  <main>
+
+    <!-- =====================================================
+         HERO
+         ===================================================== -->
+
+    <section class="hero">
+
+      <div class="hero-copy">
+
+        <p class="eyebrow">
+          ARCHITECTURE · DESIGN · PLACE
+        </p>
+
+        <h1>
+          Kylie<br>
+          <em>Cherry</em>
+        </h1>
+
+        <p class="hero-intro">
+          Architecture shaped by curiosity, intention,
+          and a thoughtful approach to how people
+          experience space.
+        </p>
+
+        <a
+          class="scroll-link"
+          href="#about"
+        >
+          Scroll to explore
+          <span>↓</span>
+        </a>
+
+        <!-- Decorative squiggly line -->
+        <span class="squiggle squiggle-hero"></span>
+
+      </div>
+
+
+      <!-- HERO IMAGE -->
+
+      <div class="hero-image-wrap">
+
+        <!--
+          Replace images/profile.jpg with her actual
+          portrait.
+
+          The placeholder automatically appears if
+          the image doesn't exist.
+        -->
+
+        <img
+          src="images/profile.jpg"
+          alt="YOUR NAME — portrait"
+          class="hero-image"
+          onerror="
+            this.src='https://placehold.co/900x1100/f5f1ec/351d46?text=YOUR+PHOTO'
+          "
+        >
+
+        <span class="image-note">
+          ARCHITECT · DESIGNER
+        </span>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ABOUT
+         ===================================================== -->
+
+    <section
+      class="intro section"
+      id="about"
+    >
+
+      <div class="section-label">
+        01 / ABOUT
+      </div>
+
+      <div class="intro-content">
+
+        <div>
+
+          <span class="small-purple">
+            HELLO.
+          </span>
+
+          <h2>
+            Designing spaces<br>
+            <em>with intention.</em>
+          </h2>
+
+        </div>
+
+
+        <div class="about-text">
+
+          <p>
+            PLACEHOLDER — Write a short introduction
+            about your sister here. Include her design
+            philosophy, interests, what motivates her,
+            and the kind of architecture she hopes
+            to create.
+          </p>
+
+          <p>
+            PLACEHOLDER — Add a second paragraph if
+            desired. Keep this personal and concise
+            rather than turning it into a résumé.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         EDUCATION / EXPERIENCE / SKILLS
+         ===================================================== -->
+
+    <section class="details section">
+
+      <!-- EDUCATION -->
+
+      <div class="detail-card">
+
+        <p class="detail-title">
+          EDUCATION
+        </p>
+
+        <h3>
+          University Name
+        </h3>
+
+        <p>
+          Degree / Program<br>
+          20XX — 20XX
+        </p>
+
+        <span class="squiggle small"></span>
+
+      </div>
+
+
+      <!-- EXPERIENCE -->
+
+      <div class="detail-card">
+
+        <p class="detail-title">
+          EXPERIENCE
+        </p>
+
+        <h3>
+          Firm / Studio Name
+        </h3>
+
+        <p>
+          Role / Position<br>
+          20XX — Present
+        </p>
+
+      </div>
+
+
+      <!-- SKILLS -->
+
+      <div class="detail-card">
+
+        <p class="detail-title">
+          SKILLS
+        </p>
+
+        <p>
+          AutoCAD · Revit · Rhino<br>
+          Adobe Creative Suite · SketchUp<br>
+          PLACEHOLDER — Add more
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PROJECTS
+         ===================================================== -->
+
+    <section
+      class="projects section"
+      id="projects"
+    >
+
+      <div class="projects-heading">
+
+        <div>
+
+          <div class="section-label">
+            02 / SELECTED WORK
+          </div>
+
+          <h2>
+            A collection of<br>
+            <em>spaces & ideas.</em>
+          </h2>
+
+        </div>
+
+
+        <p>
+          Seven projects exploring architecture,
+          materiality, context, and human experience.
+        </p>
+
+      </div>
+
+
+      <!--
+        PROJECTS ARE AUTOMATICALLY INSERTED HERE
+        BY script.js
+
+        The seven projects are defined inside:
+
+        script.js
+
+        You do NOT need to manually create
+        seven project cards here.
+      -->
+
+      <div
+        class="project-grid"
+        id="projectGrid"
+      ></div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONTACT
+         ===================================================== -->
+
+    <section
+      class="contact section"
+      id="contact"
+    >
+
+      <span class="small-purple">
+        03 / CONTACT
+      </span>
+
+      <h2>
+        Let's make<br>
+        <em>something meaningful.</em>
+      </h2>
+
+      <p>
+        For opportunities, collaborations, or inquiries:
+      </p>
+
+
+      <!--
+        Replace the email address below.
+      -->
+
+      <a
+        class="email"
+        href="mailto:YOUR.EMAIL@EXAMPLE.COM"
+      >
+        YOUR.EMAIL@EXAMPLE.COM
+      </a>
+
+
+      <!-- SOCIAL LINKS -->
+
+      <div class="socials">
+
+        <a
+          href="https://www.linkedin.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          LinkedIn ↗
+        </a>
+
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Instagram ↗
+        </a>
+
+        <a
+          href="#"
+          target="_blank"
+          rel="noreferrer"
+        >
+          CV / Résumé ↗
+        </a>
+
+      </div>
+
+
+      <!-- Decorative squiggle -->
+
+      <span class="squiggle contact-squiggle"></span>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+
+  <footer>
+
+    <span>
+      © 2026 YOUR NAME
+    </span>
+
+    <span>
+      ARCHITECTURE PORTFOLIO
+    </span>
+
+  </footer>
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+       ===================================================== -->
+
+  <script src="script.js"></script>
+
+</body>
+</html>
 
