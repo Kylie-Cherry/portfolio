@@ -1070,6 +1070,14 @@ footer {
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   }
 
+   @media (max-width: 800px) {
+  .contact-squiggle {
+    width: 200px;
+    right: 5%;
+    top: 75%;
+  }
+}
+
 
   /* SECTIONS */
 
