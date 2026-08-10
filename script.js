@@ -79,6 +79,10 @@ const projects = [
   year: "",
   role: "Designer",
 
+  // Main image used for the project card on the homepage
+  image: "images/project-6-one.jpg",
+
+  // Three individual studies
   iterations: [
     {
       image: "images/project-6-one.jpg",
@@ -92,8 +96,15 @@ const projects = [
       image: "images/project-6-three.jpg",
       description: "This cube study examines the power of subtractive design, exploring how void can be treated as a tangible element."
     }
+  ],
+
+  // Keep this so the existing gallery code doesn't break
+  images: [
+    "images/project-6-one.jpg",
+    "images/project-6-two.jpg",
+    "images/project-6-three.jpg"
   ]
-   },
+},
   {
     id: "project-7",
     number: "07",
