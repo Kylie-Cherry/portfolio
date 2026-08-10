@@ -413,10 +413,10 @@ h2 em {
   position: absolute;
 
   width: 180px;
-  height: center;
+  height: 65px;
 
   right: 12%;
-  top: 28%;
+  top: 70%;
 
   overflow: visible;
 
@@ -436,6 +436,35 @@ h2 em {
   stroke-linejoin: round;
 }
 
+/* =========================================================
+   PROJECT SQUIGGLE
+   ========================================================= */
+
+.project-squiggle {
+  display: block;
+
+  width: 150px;
+  height: 45px;
+
+  margin: 20 px 0 40px 8%;
+
+  overflow: visible;
+
+  pointer-events: none;
+
+  transform: rotate(-5deg);
+}
+
+.project-squiggle path {
+  fill: none;
+
+  stroke: var(--purple);
+
+  stroke-width: 2.2;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 
 /* =========================================================
    8. ABOUT
