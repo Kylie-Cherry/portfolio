@@ -79,7 +79,7 @@ const projects = [
     description: "This cube study investigates the impact of circular subtractions and hybrid model-making techniques can impact the language of design and create a compelling spacial environment.",
     image: "images/project-6-two.jpg",
     description: "This cube study examines the power of subtractive, exploring how void can be treated as a tangible element.",
-     image: "images/project-6-three.jpg",
+     image: "images/project-6-three.jpg"
   },
   {
     id: "project-7",
