@@ -12,7 +12,7 @@ const projects = [
     number: "01",
     title: "Big Ears Listening Lab and Archive",
     location: "Knoxville, TN",
-    description: "Located in Old City, Knoxville, Tennessee, this project is a music archive and listening space designed to house materials and music from the annual Big Ears Music Festival. The building is conceived as a dynamic environment that changes throughout the day and across seasons, reflecting the evolving nature of music and its listeners. To accomplish this I created a series of different lighting sequences to divide the building into separate zones creating a strong circulation path. Visitors enter through a series of warm- toned triangular screens mounted on adjustable rails, allowing the public to modify lighting conditions from the second-floor lounge and actively engage with the building and change the lighting conditions present."
+    description: "Located in Old City, Knoxville, Tennessee, this project is a music archive and listening space designed to house materials and music from the annual Big Ears Music Festival. The building is conceived as a dynamic environment that changes throughout the day and across seasons, reflecting the evolving nature of music and its listeners. To accomplish this I created a series of different lighting sequences to divide the building into separate zones creating a strong circulation path. Visitors enter through a series of warm- toned triangular screens mounted on adjustable rails, allowing the public to modify lighting conditions from the second-floor lounge and actively engage with the building and change the lighting conditions present.",
     images: [
       "images/project-1-main.jpg",
       "images/project-1-2.jpg",
