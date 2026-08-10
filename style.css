@@ -422,7 +422,7 @@ h2 em {
 
   pointer-events: none;
 
-  transform: rotate(24deg);
+  transform: rotate(-24deg);
 }
 
 .contact-squiggle path {
@@ -861,15 +861,7 @@ footer {
 
 /* Project squiggle */
 
-.project-squiggle {
-  position: absolute;
 
-  right: 12%;
-
-  top: 34%;
-
-  transform: rotate(10deg);
-}
 
 
 /* Main project image */
@@ -1240,7 +1232,7 @@ footer {
     padding: 15px 10px 15px 0;
   }
 
-  .project-squiggle {
+   .project-squiggle {
     right: 3%;
 
     top: 30%;
