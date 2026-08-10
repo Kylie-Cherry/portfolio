@@ -1250,3 +1250,37 @@ footer {
     margin-bottom: 20px;
   }
 }
+
+  /* PROJECT 6 FORMAT */
+
+.iterations {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.iteration {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.iteration img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.iteration p {
+  max-width: 500px;
+  margin: 0;
+  line-height: 1.8;
+}
+
+@media (max-width: 800px) {
+  .iteration {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
