@@ -97,7 +97,7 @@ const projects = [
     description: "PLACEHOLDER” Project description.",
     image: "images/project-7-main.jpg",
     images: ["images/project-7-main.jpg", "images/project-7-2.jpg", "images/project-7-3.jpg"]
-  }
+  },
 ];
 
 const placeholder = "https://placehold.co/1400x1000/f5f1ec/351d46?text=";
