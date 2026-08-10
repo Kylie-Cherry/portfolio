@@ -64,6 +64,8 @@ const projects = [
     id: "project-5",
     number: "05",
     title: "Cubed Pavilion",
+    category: "",
+    year: "".
     role: "Designer",
     description: "This project explores how shifts in level can generate a unique circulation experience. Circulation elements, such as wraparound stairs, are designed not only as means of movement but also as occupiable spaces that encourage gathering, interaction, and a sense of community. Additionally, the project served as an exploration of digital 3D modeling through both additive and subtractive processes, complemented by a range of physical modeling techniques.",
     image: "images/project-5-main.jpg",
@@ -73,6 +75,8 @@ const projects = [
     id: "project-6",
     number: "06",
     title: "Cubed Iterations",
+    category: "",
+    year: "",
     role: "Designer",
     description: "This cube study explores the creation of spatial balance through a series of intentional, asymmetrical subtractions.",
     image: "images/project-6-one.jpg",
@@ -177,17 +181,45 @@ function renderProjectPage() {
   const prev = projects[(index - 1 + projects.length) % projects.length];
   const next = projects[(index + 1) % projects.length];
 
-  container.innerHTML = `
+ container.innerHTML = `
     <section class="project-hero section">
       <div class="section-label">${project.number} / PROJECT</div>
       <h1>${project.title}</h1>
+
       <div class="project-info">
-        <div><span>TYPE</span><strong>${project.category}</strong></div>
-        <div><span>YEAR</span><strong>${project.year}</strong></div>
-        <div><span>LOCATION</span><strong>${project.location}</strong></div>
-        <div><span>ROLE</span><strong>${project.role}</strong></div>
+
+        ${project.category ? `
+          <div>
+            <span>TYPE</span>
+            <strong>${project.category}</strong>
+          </div>
+        ` : ""}
+
+        ${project.year ? `
+          <div>
+            <span>YEAR</span>
+            <strong>${project.year}</strong>
+          </div>
+        ` : ""}
+
+        ${project.location ? `
+          <div>
+            <span>LOCATION</span>
+            <strong>${project.location}</strong>
+          </div>
+        ` : ""}
+
+        ${project.role ? `
+          <div>
+            <span>ROLE</span>
+            <strong>${project.role}</strong>
+          </div>
+        ` : ""}
+
       </div>
     </section>
+`;
+
 
     <section class="project-main-image">
       <img src="${safeImage(project.image, project.title)}" alt="${project.title}">
