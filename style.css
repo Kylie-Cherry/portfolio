@@ -412,7 +412,7 @@ h2 em {
 .contact-squiggle {
   position: absolute;
 
-  width: 180px;
+  width: 280px;
   height: 65px;
 
   right: 12%;
@@ -426,36 +426,6 @@ h2 em {
 }
 
 .contact-squiggle path {
-  fill: none;
-
-  stroke: var(--purple);
-
-  stroke-width: 2.2;
-
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-/* =========================================================
-   PROJECT SQUIGGLE
-   ========================================================= */
-
-.project-squiggle {
-  display: block;
-
-  width: 150px;
-  height: 45px;
-
-  margin: 20 px 0 40px 8%;
-
-  overflow: visible;
-
-  pointer-events: none;
-
-  transform: rotate(-5deg);
-}
-
-.project-squiggle path {
   fill: none;
 
   stroke: var(--purple);
