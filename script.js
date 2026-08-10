@@ -214,6 +214,7 @@ function renderProjectPage() {
             <span>ROLE</span>
             <strong>${project.role}</strong>
           </div>
+          ` : ""}
 
       </div>
     </section>
@@ -235,7 +236,7 @@ function renderProjectPage() {
     <nav class="project-nav section" aria-label="Project navigation">
       <a href="project.html?id=${prev.id}"><span>← PREVIOUS</span><strong>${prev.title}</strong></a>
       <a href="index.html#projects" class="all-work">ALL WORK</a>
-      <a href="project.html?id=${next.id}" class="next"><span>NEXT →’</span><strong>${next.title}</strong></a>
+      <a href="project.html?id=${next.id}" class="next"><span>NEXT →</span><strong>${next.title}</strong></a>
     </nav>
   `;
 }
