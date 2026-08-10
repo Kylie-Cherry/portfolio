@@ -218,7 +218,7 @@ function renderProjectPage() {
 
       </div>
     </section>
-`;
+
 
 
     <section class="project-main-image">
