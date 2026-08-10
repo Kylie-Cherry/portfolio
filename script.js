@@ -257,12 +257,14 @@ function renderProjectPage() {
       <img src="${safeImage(project.image, project.title)}" alt="${project.title}">
     </section>
 
-    <section class="project-description section">
-      <span class="--purple">ABOUT THE PROJECT</span>
-      <div>
-        <p>${project.description}</p>
-      </div>
-    </section>
+   ${project.description ? `
+  <section class="project-description section">
+    <span class="--purple">ABOUT THE PROJECT</span>
+    <div>
+      <p>${project.description}</p>
+    </div>
+  </section>
+` : ""}
 
    ${project.iterations
   ? `
