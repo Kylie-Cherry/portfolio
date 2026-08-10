@@ -214,11 +214,9 @@ function renderProjectPage() {
             <span>ROLE</span>
             <strong>${project.role}</strong>
           </div>
-        ` : ""}
 
       </div>
     </section>
-
 
 
     <section class="project-main-image">
