@@ -405,7 +405,7 @@ h2 em {
    SMALL DECORATIVE SQUIGGLE
    ========================================================= */
 
-.squiggle.small {
+.squiggle-small {
   position: absolute;
 
   width: 90px;
@@ -417,7 +417,7 @@ h2 em {
   overflow: visible;
 }
 
-.squiggle.small::before {
+.squiggle-small::before {
   content: "";
 
   position: absolute;
