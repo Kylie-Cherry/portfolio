@@ -146,13 +146,13 @@ function renderProjects() {
     <a class="project-card ${i % 3 === 1 ? "offset" : ""}" href="project.html?id=${project.id}">
       <div class="project-image-wrap">
         <img src="${safeImage(project.image, project.title)}" alt="${project.title}" class="project-image">
-        <span class="view-project">VIEW PROJECT â†—</span>
+        <span class="view-project">VIEW PROJECT ↗</span>
       </div>
       <div class="project-meta">
         <span>${project.number}</span>
         <div>
           <h3>${project.title}</h3>
-          <p>${project.category} Â· ${project.year}</p>
+          <p>${project.category || ""}${project.role && project.year ? "/" : ""}${project.year || ""}</p>
         </div>
       </div>
     </a>
