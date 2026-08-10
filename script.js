@@ -205,9 +205,9 @@ function renderProjectPage() {
     <section class="gallery section">${gallery}</section>
 
     <nav class="project-nav section" aria-label="Project navigation">
-      <a href="project.html?id=${prev.id}"><span>â† PREVIOUS</span><strong>${prev.title}</strong></a>
+      <a href="project.html?id=${prev.id}"><span>← PREVIOUS</span><strong>${prev.title}</strong></a>
       <a href="index.html#projects" class="all-work">ALL WORK</a>
-      <a href="project.html?id=${next.id}" class="next"><span>NEXT â†’</span><strong>${next.title}</strong></a>
+      <a href="project.html?id=${next.id}" class="next"><span>NEXT →’</span><strong>${next.title}</strong></a>
     </nav>
   `;
 }
