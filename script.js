@@ -16,7 +16,7 @@ const projects = [
     location: "Knoxville, TN",
     role: "Architect",
     description: "Located in Old City, Knoxville, Tennessee, this project is a music archive and listening space designed to house materials and music from the annual Big Ears Music Festival. The building is conceived as a dynamic environment that changes throughout the day and across seasons, reflecting the evolving nature of music and its listeners. To accomplish this I created a series of different lighting sequences to divide the building into separate zones creating a strong circulation path.<br><br>Visitors enter through a series of warm- toned triangular screens mounted on adjustable rails, allowing the public to modify lighting conditions from the second-floor lounge and actively engage with the building and change the lighting conditions present.<br><br>The central atrium is defined by cool- toned square skylights that cast a grid-like pattern within the interior, echoed in the staircase design. Visitors can walk across these skylights on the roof, directly influencing the lighting.<br><br>Lastly as you enter the listening lab on the second floor you experience a daylight oculus. This circular motif is further reflected in the spiral staircase. The natural and calm created from this juxtaposes the rigidness created in the atrium.",
-     
+    image: "images/project-1-main.jpg",
     images: [
       "images/project-1-main.jpg",
       "images/project-1-2.jpg",
@@ -65,26 +65,35 @@ const projects = [
     number: "05",
     title: "Cubed Pavilion",
     category: "",
-    year: "".
+    year: "",
     role: "Designer",
     description: "This project explores how shifts in level can generate a unique circulation experience. Circulation elements, such as wraparound stairs, are designed not only as means of movement but also as occupiable spaces that encourage gathering, interaction, and a sense of community. Additionally, the project served as an exploration of digital 3D modeling through both additive and subtractive processes, complemented by a range of physical modeling techniques.",
     image: "images/project-5-main.jpg",
     images: ["images/project-5-main.jpg", "images/project-5-2.jpg", "images/project-5-3.jpg"]
   },
   {
-    id: "project-6",
-    number: "06",
-    title: "Cubed Iterations",
-    category: "",
-    year: "",
-    role: "Designer",
-    description: "This cube study explores the creation of spatial balance through a series of intentional, asymmetrical subtractions.",
-    image: "images/project-6-one.jpg",
-    description: "This cube study investigates the impact of circular subtractions and hybrid model-making techniques can impact the language of design and create a compelling spacial environment.",
-    image: "images/project-6-two.jpg",
-    description: "This cube study examines the power of subtractive, exploring how void can be treated as a tangible element.",
-     image: "images/project-6-three.jpg"
-  },
+  id: "project-6",
+  number: "06",
+  title: "Cubed Iterations",
+  category: "",
+  year: "",
+  role: "Designer",
+
+  iterations: [
+    {
+      image: "images/project-6-one.jpg",
+      description: "This cube study explores the creation of spatial balance through a series of intentional, asymmetrical subtractions."
+    },
+    {
+      image: "images/project-6-two.jpg",
+      description: "This cube study investigates how circular subtractions and hybrid model-making techniques can impact the language of design and create a compelling spatial environment."
+    },
+    {
+      image: "images/project-6-three.jpg",
+      description: "This cube study examines the power of subtractive design, exploring how void can be treated as a tangible element."
+    }
+  ]
+   },
   {
     id: "project-7",
     number: "07",
