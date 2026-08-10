@@ -1,1 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Architecture project portfolio"
+  >
+
+  <title>Project — Architecture Portfolio</title>
+
+
+  <!-- Fonts -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap"
+    rel="stylesheet"
+  >
+
+
+  <!-- Styles -->
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+</head>
+
+
+<body>
+
+
+  <!-- =====================================================
+       NAVIGATION
+       ===================================================== -->
+
+  <header class="nav">
+
+    <a
+      class="logo"
+      href="index.html"
+    >
+      YOUR NAME<span>.</span>
+    </a>
+
+
+    <nav
+      class="desktop-nav"
+      aria-label="Main navigation"
+    >
+
+      <a href="index.html#about">
+        About
+      </a>
+
+
+      <div class="work-menu">
+
+        <button
+          class="work-toggle"
+          aria-expanded="false"
+          type="button"
+        >
+          Work <span>⌄</span>
+        </button>
+
+
+        <!-- Projects are inserted by script.js -->
+
+        <div
+          class="dropdown"
+          id="projectDropdown"
+        ></div>
+
+      </div>
+
+
+      <a href="index.html#contact">
+        Contact
+      </a>
+
+    </nav>
+
+
+    <!-- Mobile menu button -->
+
+    <button
+      class="mobile-toggle"
+      aria-label="Open navigation"
+      aria-expanded="false"
+      type="button"
+    >
+      ☰
+    </button>
+
+  </header>
+
+
+
+  <!-- =====================================================
+       MOBILE MENU
+       ===================================================== -->
+
+  <div
+    class="mobile-menu"
+    id="mobileMenu"
+  >
+
+    <a href="index.html#about">
+      About
+    </a>
+
+    <a href="index.html#projects">
+      Work
+    </a>
+
+    <a href="index.html#contact">
+      Contact
+    </a>
+
+
+    <div id="mobileProjects"></div>
+
+  </div>
+
+
+
+  <!-- =====================================================
+       PROJECT CONTENT
+       ===================================================== -->
+
+  <main id="projectPage">
+
+    <!--
+      script.js will automatically put the
+      selected project's information here.
+    -->
+
+  </main>
+
+
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+
+  <footer>
+
+    <span>
+      KYLIE CHERRY
+    </span>
+
+    <span>
+      ARCHITECTURE PORTFOLIO
+    </span>
+
+  </footer>
+
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+       ===================================================== -->
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
