@@ -1073,7 +1073,7 @@ footer {
    @media (max-width: 800px) {
   .contact-squiggle {
     width: 200px;
-    right: 5%;
+    right: 1%;
     top: 75%;
   }
 }
