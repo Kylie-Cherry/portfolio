@@ -409,33 +409,28 @@ h2 em {
    SMALL DECORATIVE SQUIGGLE
    ========================================================= */
 
-.squiggle-small {
+.small-squiggle {
   position: absolute;
 
   width: 90px;
-  height: 35px;
+  height: auto;
 
   right: 30px;
   bottom: 28px;
 
   overflow: visible;
+
+  pointer-events: none;
 }
 
-.squiggle-small::before {
-  content: "";
+.small-squiggle path {
+  fill: none;
+  stroke: var(--purple);
 
-  position: absolute;
+  stroke-width: 2;
 
-  width: 90px;
-  height: 25px;
-
-  border-bottom: 2px solid var(--purple);
-
-  border-radius: 45% 55% 50% 45%;
-
-  transform:
-    rotate(-5deg)
-    skewX(-10deg);
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 
@@ -443,18 +438,14 @@ h2 em {
    CONTACT SQUIGGLE
    ========================================================= */
 
-.contact {
-   position: relative;
-}
-
 .contact-squiggle {
   position: absolute;
 
+  width: 180px;
+  height: auto;
+
   right: 12%;
   top: 28%;
-
-  width: 180px;
-  height: 45px;
 
   overflow: visible;
 
@@ -465,12 +456,13 @@ h2 em {
 
 .contact-squiggle path {
   fill: none;
+
   stroke: var(--purple);
 
-   stroke-width: 2.2;
+  stroke-width: 2.2;
 
-   stroke-linecap: round;
-   stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 
