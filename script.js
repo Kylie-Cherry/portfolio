@@ -14,10 +14,7 @@ const projects = [
     category: "Music Archive & Listening Space",
     year: "2026",
     location: "Knoxville, TN",
-    description: "Located in Old City, Knoxville, Tennessee, this project is a music archive and listening space designed to house materials and music from the annual Big Ears Music Festival. The building is conceived as a dynamic environment that changes throughout the day and across seasons, reflecting the evolving nature of music and its listeners. To accomplish this I created a series of different lighting sequences to divide the building into separate zones creating a strong circulation path."<br>
-       "Visitors enter through a series of warm- toned triangular screens mounted on adjustable rails, allowing the public to modify lighting conditions from the second-floor lounge and actively engage with the building and change the lighting conditions present."<br>
-       "The central atrium is defined by cool- toned square skylights that cast a grid-like pattern within the interior, echoed in the staircase design. Visitors can walk across these skylights on the roof, directly influencing the lighting."<br>
-       "Lastly as you enter the listening lab on the second floor you experience a daylight oculus. This circular motif is further reflected in the spiral staircase. The natural and calm created from this juxtaposes the rigidness created in the atrium.",
+    description: "Located in Old City, Knoxville, Tennessee, this project is a music archive and listening space designed to house materials and music from the annual Big Ears Music Festival. The building is conceived as a dynamic environment that changes throughout the day and across seasons, reflecting the evolving nature of music and its listeners. To accomplish this I created a series of different lighting sequences to divide the building into separate zones creating a strong circulation path.<br><br>Visitors enter through a series of warm- toned triangular screens mounted on adjustable rails, allowing the public to modify lighting conditions from the second-floor lounge and actively engage with the building and change the lighting conditions present.<br><br>The central atrium is defined by cool- toned square skylights that cast a grid-like pattern within the interior, echoed in the staircase design. Visitors can walk across these skylights on the roof, directly influencing the lighting.<br><br>Lastly as you enter the listening lab on the second floor you experience a daylight oculus. This circular motif is further reflected in the spiral staircase. The natural and calm created from this juxtaposes the rigidness created in the atrium.",
      
     images: [
       "images/project-1-main.jpg",
@@ -93,11 +90,11 @@ const projects = [
     category: "Academic / Experimental",
     year: "2023",
     location: "City, Country",
-    role: "PLACEHOLDER” Her role",
-    description: "PLACEHOLDER” Project description.",
+    role: "PLACEHOLDER â€” Her role",
+    description: "PLACEHOLDER â€” Project description.",
     image: "images/project-7-main.jpg",
     images: ["images/project-7-main.jpg", "images/project-7-2.jpg", "images/project-7-3.jpg"]
-  },
+  }
 ];
 
 const placeholder = "https://placehold.co/1400x1000/f5f1ec/351d46?text=";
