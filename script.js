@@ -11,8 +11,14 @@ const projects = [
     id: "project-1",
     number: "01",
     title: "Big Ears Listening Lab and Archive",
+    category: "Music Archive & Listening Space",
+    year: "2026",
     location: "Knoxville, TN",
-    description: "Located in Old City, Knoxville, Tennessee, this project is a music archive and listening space designed to house materials and music from the annual Big Ears Music Festival. The building is conceived as a dynamic environment that changes throughout the day and across seasons, reflecting the evolving nature of music and its listeners. To accomplish this I created a series of different lighting sequences to divide the building into separate zones creating a strong circulation path. Visitors enter through a series of warm- toned triangular screens mounted on adjustable rails, allowing the public to modify lighting conditions from the second-floor lounge and actively engage with the building and change the lighting conditions present.",
+    description: "Located in Old City, Knoxville, Tennessee, this project is a music archive and listening space designed to house materials and music from the annual Big Ears Music Festival. The building is conceived as a dynamic environment that changes throughout the day and across seasons, reflecting the evolving nature of music and its listeners. To accomplish this I created a series of different lighting sequences to divide the building into separate zones creating a strong circulation path."<br>
+       "Visitors enter through a series of warm- toned triangular screens mounted on adjustable rails, allowing the public to modify lighting conditions from the second-floor lounge and actively engage with the building and change the lighting conditions present."<br>
+       "The central atrium is defined by cool- toned square skylights that cast a grid-like pattern within the interior, echoed in the staircase design. Visitors can walk across these skylights on the roof, directly influencing the lighting."<br>
+       "Lastly as you enter the listening lab on the second floor you experience a daylight oculus. This circular motif is further reflected in the spiral staircase. The natural and calm created from this juxtaposes the rigidness created in the atrium.",
+     
     images: [
       "images/project-1-main.jpg",
       "images/project-1-2.jpg",
@@ -23,7 +29,7 @@ const projects = [
   {
     id: "project-2",
     number: "02",
-    title: "PROJECT NAME TWO",
+    title: "Big Ears Pavillion",
     category: "Urban / Civic",
     year: "2025",
     location: "City, Country",
@@ -87,8 +93,8 @@ const projects = [
     category: "Academic / Experimental",
     year: "2023",
     location: "City, Country",
-    role: "PLACEHOLDER â€” Her role",
-    description: "PLACEHOLDER â€” Project description.",
+    role: "PLACEHOLDER” Her role",
+    description: "PLACEHOLDER” Project description.",
     image: "images/project-7-main.jpg",
     images: ["images/project-7-main.jpg", "images/project-7-2.jpg", "images/project-7-3.jpg"]
   }
@@ -165,11 +171,11 @@ function renderProjectPage() {
 
   const params = new URLSearchParams(window.location.search);
   const project = projects.find(p => p.id === params.get("id")) || projects[0];
-  document.title = `${project.title} â€” YOUR NAME`;
+  document.title = `${project.title} ” Kylie Cherry`;
 
   const gallery = project.images.map((img, i) => `
     <figure class="gallery-item ${i === 0 ? "gallery-wide" : ""}">
-      <img src="${safeImage(img, project.title + " â€” image " + (i + 1))}" alt="${project.title} â€” image ${i + 1}">
+      <img src="${safeImage(img, project.title + " ” image " + (i + 1))}" alt="${project.title} â€” image ${i + 1}">
     </figure>
   `).join("");
 
@@ -187,7 +193,6 @@ function renderProjectPage() {
         <div><span>LOCATION</span><strong>${project.location}</strong></div>
         <div><span>ROLE</span><strong>${project.role}</strong></div>
       </div>
-      <span class="squiggle project-squiggle"></span>
     </section>
 
     <section class="project-main-image">
@@ -195,9 +200,8 @@ function renderProjectPage() {
     </section>
 
     <section class="project-description section">
-      <span class="small-purple">ABOUT THE PROJECT</span>
+      <span class="--purple">ABOUT THE PROJECT</span>
       <div>
-        <h2>Concept &<br><em>response.</em></h2>
         <p>${project.description}</p>
       </div>
     </section>
