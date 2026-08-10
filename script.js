@@ -186,6 +186,19 @@ function renderProjectPage() {
     </figure>
   `).join("");
 
+  const iterations = project.iterations
+  ? project.iterations.map((iteration, i) => `
+      <div class="iteration">
+        <img
+          src="${safeImage(iteration.image, project.title + " image " + (i + 1))}"
+          alt="${project.title} — image ${i + 1}"
+        >
+        <p>${iteration.description}</p>
+      </div>
+    `).join("")
+  : "";
+
+
   const index = projects.findIndex(p => p.id === project.id);
   const prev = projects[(index - 1 + projects.length) % projects.length];
   const next = projects[(index + 1) % projects.length];
@@ -240,7 +253,16 @@ function renderProjectPage() {
       </div>
     </section>
 
+   ${project.iterations
+  ? `
+    <section class="iterations section">
+      ${iterations}
+    </section>
+  `
+  : `
     <section class="gallery section">${gallery}</section>
+  `
+}
 
     <nav class="project-nav section" aria-label="Project navigation">
       <a href="project.html?id=${prev.id}"><span>← PREVIOUS</span><strong>${prev.title}</strong></a>
